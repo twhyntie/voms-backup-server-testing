@@ -6,9 +6,9 @@ voms-backup-server-testing
 This setup assumes that you are testing on a configured UI, and that you
 have your user cert all ready to go. If you can do:
 
-'''bash
+```bash
 voms-proxy-init --voms vo.southgrid.ac.uk
-'''
+```
 
 (for example) and get a SouthGrid VO proxy, then you should be able to use
 these files to test the other two VOMS servers without reconfiguring the
@@ -16,20 +16,20 @@ UI.
 
 ### Step 1
 
-Set the X509_VOMS_DIR variable to point to the included `vomsdir`. E.g., if
+Set the `X509_VOMS_DIR` variable to point to the included `vomsdir`. E.g., if
 you are in the directory containing this README file:
 
-'''bash
+```bash
 export X509_VOMS_DIR=$(pwd)/vomsdir
-'''
+```
 
 ### Step 2
 
 Test the Oxford VOMS server:
 
-'''bash
+```bash
 voms-proxy-init --debug  --vomses ./voms02/vo.southgrid.ac.uk  --voms vo.southgrid.ac.uk
-'''
+```
 
 (change the appropriate VO name bits to refer to a VO of which you are a
 member)
@@ -38,9 +38,9 @@ member)
 
 Test the Imperial VOMS server:
 
-'''bash
+```bash
 voms-proxy-init --debug  --vomses ./voms03/vo.southgrid.ac.uk  --voms vo.southgrid.ac.uk
-'''
+```
 
 ### Step 4
 
