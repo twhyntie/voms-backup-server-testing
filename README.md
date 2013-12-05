@@ -46,7 +46,7 @@ voms-proxy-init --debug  --vomses ./voms03/vo.southgrid.ac.uk  --voms vo.southgr
 
 Please fill in the results on the wiki page:
 
-* [https://www.gridpp.ac.uk/wiki/VOMSdeployment2013#Test_Status]
+* [https://www.gridpp.ac.uk/wiki/VOMSdeployment2013#Test_Status](https://www.gridpp.ac.uk/wiki/VOMSdeployment2013#Test_Status)
 
 Finally, if you are a member of more than one of the GridPP VOMS hosted
 VOs, return to step 2 and repeat for the other VO(s).
