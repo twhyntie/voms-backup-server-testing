@@ -1,0 +1,1 @@
+"cernatschool.org" "voms02.gridpp.ac.uk" "15500" "/C=UK/O=eScience/OU=Oxford/L=OeSC/CN=voms02.gridpp.ac.uk" "cernatschool.org"
