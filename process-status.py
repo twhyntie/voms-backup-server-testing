@@ -33,6 +33,7 @@ if __name__ == "__main__":
     n_ready   = 0
     n_cleared = 0
     n_sched   = 0
+    n_running = 0
 
     for l in ls:
         if "Current Status:" in l:
@@ -43,6 +44,7 @@ if __name__ == "__main__":
             if "Ready"         in l: n_ready   += 1
             if "Cleared"       in l: n_cleared += 1
             if "Scheduled"     in l: n_sched   += 1
+            if "Running"       in l: n_running += 1
 
     print("*--> % 5d jobs were submitted........" % (n_jobs))
     print("*----> Of which % 5d succeeded......." % (n_success))
@@ -51,5 +53,6 @@ if __name__ == "__main__":
     print("*----> Of which % 5d are ready......." % (n_ready  ))
     print("*----> Of which % 5d are cleared....." % (n_cleared))
     print("*----> Of which % 5d are scheduled..." % (n_sched  ))
+    print("*----> Of which % 5d are running....." % (n_running))
     print("*====>    TOTAL:% 5d <=============" % \
-        (n_success + n_aborted + n_waiting + n_ready + n_cleared + n_sched))
+        (n_success + n_aborted + n_waiting + n_ready + n_cleared + n_sched + n_running))
